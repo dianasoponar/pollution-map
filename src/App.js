@@ -390,7 +390,6 @@ export class App extends Component{
                 zoom = { 12 }
                 // styles = { mapStyle }
                 disableDefaultUI = { true }
-                legend= { true }
                 // Copenhagen
                 initialCenter = {
                     {
@@ -443,7 +442,7 @@ export class App extends Component{
                     <div className="col" ><div style={{backgroundColor: "orange", marginLeft: "0.5rem"}} className="square"></div></div>
                   </div>
                   <div className="row"> 
-                    <div className="col" ><div style={{backgroundColor: "BACE28", marginLeft: "0.5rem"}} className="square"></div></div>
+                    <div className="col" ><div style={{backgroundColor: "yellow", marginLeft: "0.5rem"}} className="square"></div></div>
                   </div>
                   <div className="row"> 
                     <div className="col" ><div style={{backgroundColor: "#28CE5B", marginLeft: "0.5rem"}} className="square"></div></div>
