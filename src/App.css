@@ -1,110 +1,38 @@
-.body {
-    padding: .75rem;
-}
-
 .App {
-    text-align: center;
+  text-align: center;
 }
 
 .App-logo {
-    height: 40vmin;
-    pointer-events: none;
+  height: 40vmin;
+  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .App-header {
-    background-color: #282c34;
-    min-height: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-    padding-left: 2vh;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-link {
-    color: #61dafb;
+  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.card-title {
-    display: flex;
-    padding-left: 0.75rem;
-}
-
-.card-text {
-    display: flex;
-    padding-left: 0.75rem;
-    margin-bottom: 0.3rem;
-    font-size: 1.2rem;
-}
-
-.card-title {
-    font-size: 1.5rem;
-}
-
-.card {
-    color: #282c34;
-    background-color: #f6f6f6 !important;
-    margin-top: 2rem;
-    margin-right: 2rem;
-    border-radius: 1.5rem !important;
-    padding: 0 1rem 0 1rem;
-}
-
-.Map {
-    margin: 2rem;
-    min-height: 30rem;
-    max-height: 35rem;
-}
-
-.square {
-    height: 1rem !important;
-    width: 1rem !important;
-    margin-left: 15px;
-}
-
-.legend {
-    z-index: 1;
-    position: absolute;
-    width: 2rem;
-    margin-left: 0.5rem;
-    margin-top: 0.5rem;
-    width: auto;
-    padding: 0.75rem;
-    background-color: rgba(255, 255, 255, 0.6);
-    opacity: 0.8;
-}
-
-.legend p {
-    font-size: 1rem;
-}
-
-.row {
-    padding: 0.05rem;
-    margin-left: 0;
-}
-
-.stars {
-    padding-left: 1.5rem;
-}
-
-.stations-container {
-    margin-left: 1rem;
-    margin-top: 1.5rem;
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
