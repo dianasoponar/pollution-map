@@ -1,0 +1,39 @@
+.card-title {
+    display: flex;
+    padding-left: 0.75rem;
+}
+
+.card-text {
+    display: flex;
+    padding-left: 0.75rem;
+    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.card {
+    color: #282c34;
+    background-color: #f6f6f6 !important;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    border-radius: 1.5rem !important;
+    padding: 0 1rem 0 1rem;
+}
+
+.row {
+    padding: 0.05rem;
+    margin-left: 0;
+}
+
+.back-button {
+    margin: 1rem;
+}
+
+.sensor-container {
+    width: fit-content;
+    position: fixed;
+    left: 30%;
+}
