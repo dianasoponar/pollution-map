@@ -1,68 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Air Quality Monitor
 
-## Available Scripts
+An application for monitoring pollution in a city.  
+The idea started with my bachelor thesis, where initially I implemented only a [mobile application using Java](https://github.com/dianasoponar/PollutionMap) and recently switching to a react app.
 
-In the project directory, you can run:
+The project also includes a prototype for a pollution sensor.
 
-### `npm start`
+In the project directory, you can run: `npm start`.  
+Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Functionalities
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+* a user can see on a map the air pollution stations
+* a user can interact with the map and click on the pollution stations for more details (e.g. address, pollution level)
+* when the application starts it show the closest three air pollution stations to the user's location
+* the closest three air pollution stations can be filtered to a new address
 
-### `npm test`
+### Rating functionality
+A user can rate the air quality in its current location. The rating will appear on the map (still needs improvements).
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In order to store the data the app is using [Firebase](https://firebase.google.com/).
 
-### `npm run build`
+![](home.png =250x250)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prototype page
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+![](device.png =250x250)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Air Pollution Prototype
+The air pollution sensor identifies the PM 2.5 (small particulate matter) and sends the results every couple of seconds to [ThingSpeak](https://thingspeak.com/).  
+In order to build the pollution sensor I used the following components:
+* Arduino Uno
+* Wi-Fi Module ESP8266
+* Grove – Dust Sensor (PPD42NS)
+* Wire connectors
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![](prototype.png)
