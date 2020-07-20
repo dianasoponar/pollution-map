@@ -6,6 +6,7 @@ import './MapComp.css';
 import { addEmoji, markersList } from '../utils.js'
 import Geocode from "react-geocode";
 import firebase from "../../firebase";
+import { GeocodeApiKey } from '../apiKeys.js'
 
 
 export class MapComp extends Component{
@@ -41,7 +42,7 @@ export class MapComp extends Component{
     }
 
     // set Google Maps Geocoding API for purposes of quota management. Its optional but recommended.
-    Geocode.setApiKey("AIzaSyBESc_iTGS2Qys0bHcjeChJk9WChsHp4bI");
+    Geocode.setApiKey(GeocodeApiKey);
     // set response language. Defaults to english.
     Geocode.setLanguage("en");
     
@@ -391,5 +392,5 @@ export class MapComp extends Component{
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyBESc_iTGS2Qys0bHcjeChJk9WChsHp4bI'
+  apiKey: GeocodeApiKey
 })(MapComp);

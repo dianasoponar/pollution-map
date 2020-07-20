@@ -1,7 +1,8 @@
 import firebase from "firebase";
+import { FirebaseApiKey } from "./components/apiKeys.js";
 
 const config = {
-    apiKey: "AIzaSyCuAsq3p_tyEKDTmRjIXC_MmwQthduKyw4",
+    apiKey: FirebaseApiKey,
     authDomain: "pollution-map-react.firebaseapp.com",
     databaseURL: "https://pollution-map-react.firebaseio.com",
     projectId: "pollution-map-react",
