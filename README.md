@@ -20,11 +20,11 @@ A user can rate the air quality in its current location. The rating will appear 
 
 In order to store the data the app is using [Firebase](https://firebase.google.com/).
 
-![](home.png =250x250)
+![](home.png)
 
 ### Prototype page
 
-![](device.png =250x250)
+![](device.png)
 
 
 ## Air Pollution Prototype
